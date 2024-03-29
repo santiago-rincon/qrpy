@@ -34,7 +34,7 @@ You have the following options when entering the path:
   This example generates a QR with the text "Some text" and saves it in the current working directory with the name "qr.png".
 
   ```shell
-  python qrpy generate 'Some text'
+  python qrpy.py generate 'Some text'
   ```
 
 - Set the path with the file name: you must specify the path where you want to save the file ending with the name and extension, only `.png` and `.svg` extensions are supported in case of placing another one, it will be replaced with `.png`.
@@ -44,7 +44,7 @@ You have the following options when entering the path:
   - This example generates a QR with the text "Some text" and saves it in the path `/any/folder/` with the name `my_qr.png`.
 
     ```shell
-    python qrpy generate 'Some text' -o /any/folder/my_qr.png
+    python qrpy.py generate 'Some text' -o /any/folder/my_qr.png
     ```
 
   - This example generates a QR with the text "Some text" and saves it in the path `/any/folder/not/created/` with the name `vect_qr.svg`.
@@ -52,7 +52,7 @@ You have the following options when entering the path:
     > Folders that do not exist will be created
 
     ```shell
-    python qrpy generate 'Some text' --output /any/folder/not/created/vect_qr.svg
+    python qrpy.py generate 'Some text' --output /any/folder/not/created/vect_qr.svg
     ```
 
   - This example generates a QR with the text "Some text" and saves it in the path `/any/folder/` with the name `my_qr.png`.
@@ -60,7 +60,7 @@ You have the following options when entering the path:
     > Extension will be changed
 
     ```shell
-    python qrpy generate 'Some text' -o /any/folder/my_qr.jpg
+    python qrpy.py generate 'Some text' -o /any/folder/my_qr.jpg
     ```
 
 - Set the path with only folders: in case the specified path does not contain a file name with extension, the folders specified in the path will be created (if they do not exist) and the QR will be saved with the name qr.png.
@@ -68,7 +68,7 @@ You have the following options when entering the path:
   - This example generates a QR with the text "Some text" and saves it in the path `/only/folders/` with the name `qr.png`.
     > Folders that do not exist will be created
     ```shell
-    python qrpy generate 'Some text' -o /only/folders
+    python qrpy.py generate 'Some text' -o /only/folders
     ```
 
 ### Create QR interactively
@@ -86,7 +86,7 @@ You can generate QR codes with the command `interactive`. The CLI will ask for t
 #### Example
 
 ```shell
-python qrpy interactive
+python qrpy.py interactive
 ```
 
 ## Note for Windows
