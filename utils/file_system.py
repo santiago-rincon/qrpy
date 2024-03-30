@@ -23,7 +23,7 @@ def build_output_path(path):
     else:
         directory = os.path.join(first_part, file)
         os.path.isdir(directory) or os.makedirs(directory)
-        return os.path.join(directory, 'qr.png')
+        return (os.path.join(directory, 'qr.png'), '.png')
 
 
 def output_file_exist(path):
